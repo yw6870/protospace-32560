@@ -7,8 +7,6 @@ Rails.application.routes.draw do
   resources :prototypes do
     resources :comments
   end
-  post '/prototypes/new', to: "prototypes#create"
-  post '/prototypes/:id/edit(prototype.id)', to: "prototypes#update"
 
   resources :users
 end
